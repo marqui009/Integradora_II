@@ -1,0 +1,13 @@
+<div class="container">
+    <h1>Clima</h1>
+    <input [(ngModel)]="location" placeholder="Ingresa una ciudad" class="form-control">
+    <button (click)="obtenerClima()" class="btn btn-primary mt-2">Obtener clima</button>
+  
+    <div *ngIf="weather">
+      <h2>Clima en {{ location }}</h2>
+      <p>Temperatura: {{ weather.current.temperature }}°C</p>
+      <p>Humedad: {{ weather.current.humidity }}%</p>
+      <p>Descripción: {{ weather.current.weather_descriptions[0] }}</p>
+    </div>
+  </div>
+  

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agregar Actividad</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+</head>
+
+<body>
+  <!-- Barra de Navegación -->
+  <app-navigation></app-navigation> <!-- Componente para la barra de navegación -->
+
+  <div class="container-fluid p-4">
+    <h1 class="text-center mb-4">Agregar Actividad</h1> <!-- Título principal de la página -->
+    <div class="row g-4">
+      <!-- Formulario de la actividad -->
+      <div class="col-md-6">
+        <form>
+          <!-- Campo para el nombre de la actividad -->
+          <div class="mb-3">
+            <label for="actividad" class="form-label">Actividad:</label>
+            <input type="text" class="form-control" name="actividad" [(ngModel)]="activities.Nombre_Actividad">
+          </div>
+          <!-- Campo para la descripción de la actividad -->
+          <div class="mb-3">
+            <label for="descripcion" class="form-label">Descripción:</label>
+            <textarea class="form-control" name="descripcion" [(ngModel)]="activities.Descripcion" rows="2"></textarea>
+          </div>
+          <!-- Campo para seleccionar el encargado de la actividad -->
+          <div class="mb-3">
+            <label for="encargado" class="form-label">Encargado:</label>
+            <select class="form-control" name="encargado" [(ngModel)]="activities.Encargado">
+              <option value="">Elige una opción</option>
+              <!-- Se llenan las opciones con los encargados -->
+              <option *ngFor="let item of Enc" value="{{item.idUsuario}}">{{item.nombre}}</option>
+            </select>
+          </div>
+          <!-- Campo para seleccionar el participante de la actividad -->
+          <div class="mb-3">
+            <label for="participante" class="form-label">Participante:</label>
+            <select class="form-control" name="participante" [(ngModel)]="activities.Participante">
+              <option value="">Elige una opción</option>
+              <!-- Se llenan las opciones con los participantes -->
+              <option *ngFor="let item1 of Par" value="{{item1.idUsuario}}">{{item1.nombre}}</option>
+            </select>
+          </div>
+          <!-- Campo para la fecha de inicio de la actividad -->
+          <div class="mb-3">
+            <label for="fechaInicio" class="form-label">Fecha de Inicio:</label>
+            <input type="date" class="form-control" name="fechaini" [(ngModel)]="activities.Fecha_de_inicio">
+          </div>
+          <!-- Campo para la fecha de fin de la actividad -->
+          <div class="mb-3">
+            <label for="fechaFin" class="form-label">Fecha de Fin:</label>
+            <input type="date" class="form-control" name="fechafin" [(ngModel)]="activities.Fecha_de_fin">
+          </div>
+          <!-- Campo para seleccionar el estatus de la actividad -->
+          <div class="mb-3">
+            <label for="estatus" class="form-label">Estatus:</label>
+            <select class="form-control" [(ngModel)]="activities.Estatus" [ngModelOptions]="{ standalone: true }">
+              <option value="">Elige una opción</option>
+              <!-- Se llenan las opciones con los estatus -->
+              <option *ngFor="let item2 of Est">{{item2.nombreEstatus}}</option>
+            </select>
+          </div>
+          <!-- Campo para la ubicación de la actividad -->
+          <div class="mb-3">
+            <label for="lugar" class="form-label">Lugar:</label>
+            <input class="form-control" name="lugar" [(ngModel)]="activities.Lugar">
+          </div>
+        </form>
+      </div>
+
+      <!-- Sección del mapa -->
+      <div class="col-md-6">
+        <h3 class="titulo text-center">Mapa</h3>
+        <!-- Mapa para seleccionar la ubicación -->
+        <div id="map" class="mt-3"></div>
+        <!-- Botón para geolocalizar la actividad -->
+        <button class="btn btn-outline-success w-100" (click)="ubicar()">Geolocalizar</button>
+        <!-- Botón para recargar el mapa -->
+        <button class="btn btn-outline-warning w-100" (click)="recargar()">Recargar</button>
+        <!-- Texto de ayuda para la selección del lugar -->
+        <h6 class="text-left mt-3" style="font-style: italic; color: #6c757d;">*Selecciona con un clic en el mapa, la ubicación de la actividad</h6>
+      </div>
+    </div>
+
+    <!-- Botón para guardar la actividad -->
+    <div class="text-center mt-4">
+      <button type="submit" class="btn btn-primary" (click)="edit ? updateAct() : savenewactividad()">Guardar Actividad</button>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> <!-- Carga los scripts de Bootstrap -->
+</body>
+
+</html>

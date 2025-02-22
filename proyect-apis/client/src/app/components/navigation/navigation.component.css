@@ -1,0 +1,251 @@
+/* Estilo principal del header */
+.header-blue {
+  background-color: #000000; /* Color de fondo más suave */
+  padding-bottom: 60px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #fff;
+}
+
+/* Ajuste del header en pantallas medianas */
+@media (min-width: 768px) {
+  .header-blue {
+    padding-bottom: 10px;
+  }
+}
+
+#inciar {
+  color: #000000;
+}
+
+.header-blue .navbar {
+  margin: 0;
+  padding: 0;
+  border: none; /* Por si el borde causa la línea */
+  box-shadow: none; /* Por si una sombra la genera */
+}
+
+/* Estilos para el navbar */
+.header-blue .navbar .navbar-brand {
+  font-weight: bold;
+  color: inherit;
+}
+
+.header-blue .navbar .navbar-brand:hover {
+  color: #000000;
+}
+
+.header-blue .navbar .navbar-collapse {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: .5rem;
+}
+
+.header-blue .navbar .navbar-collapse span .login {
+  color: #d9d9d9;
+  margin-right: .5rem;
+  text-decoration: none;
+}
+
+.header-blue .navbar .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.header-blue .navbar .navbar-toggler:hover,
+.header-blue .navbar .navbar-toggler:focus {
+  background: none;
+}
+
+.header-blue .navbar .navbar-nav a.active,
+.header-blue .navbar .navbar-nav > .show .dropdown-item {
+  background: none;
+  box-shadow: none;
+}
+
+.header-blue .hero {
+  margin-top:20px;
+  text-align:center;
+}
+
+@media (min-width:768px) {
+  .header-blue .hero {
+    margin-top:60px;
+    text-align:left;
+  }
+}
+
+.header-blue .hero h1 {
+  color:#fff;
+  font-size:40px;
+  margin-top:0;
+  margin-bottom:15px;
+  font-weight:300;
+  line-height:1.4;
+}
+
+@media (min-width:992px) {
+  .header-blue .hero h1 {
+    margin-top:190px;
+    margin-bottom:24px;
+    line-height:1.2;
+  }
+}
+
+.header-blue .hero p {
+  color:rgba(255,255,255,0.8);
+  font-size:20px;
+  margin-bottom:30px;
+  font-weight:300;
+}
+
+.header-blue .phone-holder {
+  text-align:right;
+}
+
+.header-blue div.iphone-mockup {
+  position:relative;
+  max-width:300px;
+  margin:20px;
+  display:inline-block;
+}
+
+.header-blue .iphone-mockup img.device {
+  width:100%;
+  height:auto;
+}
+
+
+
+.header-blue .iphone-mockup .screen:before {
+  content:'';
+  background-color:#000000;
+  position:absolute;
+  width:70%;
+  height:140%;
+  top:-12%;
+  right:-60%;
+  transform:rotate(-19deg);
+  opacity:0.2;
+}
+h2{
+  color: whitesmoke;
+}
+
+/* Estilo para el enlace "navbar-brand" */
+.header-blue .navbar .navbar-brand:hover {
+  color: #f0f0f0; /* Cambia a gris claro al pasar el mouse */
+}
+
+/* Estilo para el botón de login */
+.header-blue .navbar .navbar-collapse span .login {
+  color: #fff; /* Texto blanco */
+  border: none; /* Sin contorno */
+  padding: 8px 20px; /* Espaciado interno */
+  border-radius: 40px; /* Bordes redondeados */
+  text-decoration: none; /* Sin subrayado */
+  font-weight: bold; /* Letras en negritas */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Efecto hover para el botón de login */
+.header-blue .navbar .navbar-collapse span .login:hover {
+  background-color: #fff; /* Fondo blanco al pasar el mouse */
+  color: #000; /* Texto negro */
+}
+
+/* Estilo para el botón de acción (como el de usuario) */
+.header-blue .action-button {
+  background-color: #000000; /* Fondo negro */
+  color: #ffffff; /* Texto blanco */
+  border: none; /* Sin borde */
+  border-radius: 40px; /* Bordes redondeados */
+  padding: 8px 20px; /* Espaciado interno */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Efecto hover para el botón de acción */
+.header-blue .action-button:hover {
+  background-color: transparent; /* Fondo transparente al pasar el mouse */
+  color: #fff; /* Texto blanco */
+  border: 1px solid #fff; /* Aparece el borde blanco */
+}
+
+/* Estilo para el campo de búsqueda */
+.header-blue .navbar .form-inline .search-field {
+  display: inline-block;
+  width: 80%; /* Ancho relativo */
+  background: none;
+  border: none; /* Sin borde */
+  border-bottom: 1px solid transparent; /* Línea inferior inicial transparente */
+  border-radius: 0; /* Sin bordes redondeados */
+  color: inherit; /* Toma el color del texto contenedor */
+  transition: border-bottom-color 0.3s;
+}
+
+/* Efecto hover para el campo de búsqueda */
+.header-blue .navbar .form-inline .search-field:focus {
+  border-bottom-color: #007bff; /* Fondo de la línea inferior al enfocar */
+}
+
+/* Estilo para los botones dentro de la barra de navegación */
+.header-blue .navbar-nav .nav-item .btn {
+  border-radius: 30px; /* Bordes redondeados para los botones */
+  padding: 10px 20px; /* Espaciado interno */
+  font-size: 14px; /* Tamaño de la fuente */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  font-weight: 500; /* Peso de la fuente */
+  letter-spacing: 1px; /* Espaciado entre letras */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+  border: none; /* Sin borde por defecto */
+}
+
+/* Estilo para el botón "Historial Actividades" */
+.header-blue .navbar-nav .nav-item .btn-light {
+  background-color: #f8f9fa; /* Fondo blanco para el botón */
+  color: #333; /* Color de texto oscuro */
+  border: 1px solid #ddd; /* Borde claro */
+}
+
+/* Efecto hover para el botón "Historial Actividades" */
+.header-blue .navbar-nav .nav-item .btn-light:hover {
+  background-color: #e2e6eade; /* Fondo más oscuro al pasar el ratón */
+  color: #007bff; /* Cambio de color de texto */
+  border-color: #000000; /* Cambio de borde */
+}
+
+/* Estilo para el botón con el nombre del usuario */
+.header-blue .navbar-nav .nav-item .btn-primary {
+  background-color: #0d2d4f; /* Fondo azul para el botón */
+  color: white; /* Texto blanco */
+  padding: 10px 30px; /* Padding más grande */
+  font-size: 16px; /* Tamaño de la fuente */
+  text-transform: capitalize; /* Primeras letras en mayúsculas */
+  border: none; /* Sin borde */
+  transition: background-color 0.3s ease; /* Suaviza la transición */
+}
+
+/* Efecto hover para el botón de usuario */
+.header-blue .navbar-nav .nav-item .btn-primary:hover {
+  background-color: #0b1e37; /* Fondo azul más oscuro al pasar el ratón */
+  color: white; /* El texto sigue siendo blanco */
+}
+
+
+/* Añadir espaciado entre los botones */
+.header-blue .navbar-nav .nav-item {
+  margin-right: 15px; /* Separación entre los botones */
+}
+
+/* Ajustar el espaciado entre los elementos */
+.header-blue .navbar-nav .nav-item .navbar-text {
+  margin-right: 15px; /* Añadir margen derecho */
+}
+
+/* Estilo adicional para mejorar la apariencia del texto */
+.header-blue .navbar-nav .nav-item a {
+  text-decoration: none; /* Sin subrayado */
+  color: inherit; /* Heredar el color del padre */
+}
+
+
+.rounded {
+  border-radius: 10px; /* Puedes ajustar el valor según tus preferencias */
+}

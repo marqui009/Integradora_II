@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>ActiPro</title> <!-- Título de la página que aparece en la pestaña del navegador -->
+  <base href="/"> <!-- Define la URL base para la aplicación -->
+
+  <!-- Importación de estilos de Bootstrap 4 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+  
+  <!-- Importación de iconos de Font Awesome versión 4 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Importación de la fuente 'Source Sans Pro' desde Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+
+  <!-- Importación de Bootstrap 5 (se usa en conjunto con Bootstrap 4, aunque puede haber conflictos) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Hace que la página sea responsive -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico"> <!-- Ícono que aparece en la pestaña del navegador -->
+
+  <!-- Importación de Font Awesome versión 5 (podría generar conflictos con la versión 4) -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+  <!-- Enlace a una hoja de estilos personalizada -->
+  <link rel="stylesheet" href="estilos.css" type="text/css">
+</head>
+
+<body>
+  <!-- Aquí se carga la aplicación Angular -->
+  <app-root></app-root>
+
+  <!-- SDK de PayPal para pagos en la aplicación, con moneda configurada en MXN -->
+  <script src="https://www.paypal.com/sdk/js?client-id=Aa4smFKnO-AFbRB8vr-4cMNJjHA3HIUbhlMo20l8R_6cgdbSoqE-HcqW0RcpfU3brOqXSc2nzU7OUa-Q&currency=MXN"></script>
+
+  <!-- Script de Tidio para integrar un chat en vivo en la aplicación -->
+  <script src="//code.tidio.co/r903mxkcybevihheldrmdgjuorbydghu.js" async></script>
+
+  <!-- Script para integrar Jitsi Meet, una plataforma de videoconferencias -->
+  <script src='https://meet.jit.si/external_api.js'></script>
+
+</body>
+
+</html>

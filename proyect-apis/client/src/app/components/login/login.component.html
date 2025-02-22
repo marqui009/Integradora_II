@@ -1,0 +1,65 @@
+<!-- Mensaje de error -->
+<div *ngIf="errorMessage" class="alert alert-danger text-center" role="alert">
+  {{ errorMessage }}
+</div>
+
+<div>
+    <div class="header-blue">
+        <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
+            <div class="container"><a class="navbar-brand" routerLink="/home">ActiPro</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+<section class="vh-100" style="background-color: #f7f8f9;">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col col-xl-10">
+                <div class="card shadow-lg" style="border-radius: 1.25rem;">
+                    <div class="row g-0">
+                        <div class="col-md-6 col-lg-5 d-none d-md-block">
+                            <img src="https://www.eshoprent.com/content/uploads/2022/01/eshoprent_patarimai_2020_e-komercijos_tendencijos_antra_dalis.png"
+                            alt="login form" class="img-fluid" style="border-radius: 1.25rem 0 0 1.25rem;" />
+                        </div>
+                        <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                            <div class="card-body p-4 p-lg-5 text-black">
+                                <form>
+                                    <div class="d-flex align-items-center mb-3 pb-1">
+                                        <span class="h1 fw-bold mb-0 text-info">ActiPro</span>
+                                    </div>
+
+                                    <h5 class="fw-normal mb-3 pb-3 text-muted" style="letter-spacing: 1px;">Inicia sesión con tu cuenta</h5>
+
+                                    <!-- Aquí aparece la alerta de error -->
+                                    <div *ngIf="errorMessage" class="alert alert-danger text-center" role="alert">
+                                      {{ errorMessage }}
+                                    </div>
+
+                                    <!-- Nuevo formulario con estilo mejorado -->
+                                    <div class="form-group mb-4">
+                                        <label for="exampleInputEmail1" class="font-weight-bold text-dark">Correo Electrónico</label>
+                                        <input type="email" [(ngModel)]="correo" name="email" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Introduce tu correo">
+                                        <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu correo con nadie más.</small>
+                                    </div>
+
+                                    <div class="form-group mb-4">
+                                        <label for="exampleInputPassword1" class="font-weight-bold text-dark">Contraseña</label>
+                                        <input type="password" [(ngModel)]="password1" name="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Introduce tu contraseña">
+                                    </div>
+
+                                    <div class="pt-1 mb-4">
+                                        <button type="button" class="btn btn-info btn-lg btn-block text-white" (click)="login()">Iniciar Sesión</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

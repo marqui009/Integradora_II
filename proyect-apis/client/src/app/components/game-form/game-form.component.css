@@ -1,0 +1,187 @@
+/* Add these styles to your component's CSS file or your global styles */
+/* Estilo principal del header */
+.header-blue {
+  background-color: #000000; /* Color de fondo más suave */
+  padding-bottom: 60px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #fff;
+}
+
+/* Ajuste del header en pantallas medianas */
+@media (min-width: 768px) {
+  .header-blue {
+    padding-bottom: 10px;
+  }
+}
+
+.header-blue .navbar {
+  background: transparent;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  color: #fff;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+}
+
+/* Estilos para el navbar */
+.header-blue .navbar .navbar-brand {
+  font-weight: bold;
+  color: inherit;
+}
+
+.header-blue .navbar .navbar-brand:hover {
+  color: #554d4d;
+}
+
+.header-blue .navbar .navbar-collapse {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: .5rem;
+}
+
+
+.header-blue .navbar .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.header-blue .navbar .navbar-toggler:hover,
+.header-blue .navbar .navbar-toggler:focus {
+  background: none;
+}
+
+.header-blue .navbar .navbar-nav a.active,
+.header-blue .navbar .navbar-nav > .show .dropdown-item {
+  background: none;
+  box-shadow: none;
+}
+
+/* Estilo para los botones en la barra de navegación */
+.navbar-nav .nav-item .btn {
+  border-radius: 30px; /* Bordes redondeados para los botones */
+  padding: 10px 20px; /* Espaciado interno */
+  font-size: 14px; /* Tamaño de la fuente */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  font-weight: 500; /* Peso de la fuente */
+  letter-spacing: 1px; /* Espaciado entre letras */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+  border: none; /* Sin borde por defecto */
+}
+
+/* Estilo para el botón "Historial Actividades" */
+.navbar-nav .nav-item .btn-light {
+  background-color: #f8f9fa; /* Color de fondo claro */
+  color: #333; /* Color del texto oscuro */
+  border: 1px solid #ddd; /* Borde claro */
+}
+
+/* Efecto hover para el botón "Historial Actividades" */
+.navbar-nav .nav-item .btn-light:hover {
+  background-color: #e2e6ea; /* Fondo más oscuro al pasar el ratón */
+  color: #007bff; /* Cambio de color de texto */
+  border-color: #007bff; /* Cambio de borde */
+}
+
+/* Estilo para el botón con el nombre del usuario */
+.navbar-nav .nav-item .btn-primary {
+  background-color: #007bff; /* Fondo azul para el botón */
+  color: white; /* Color de texto blanco */
+  padding: 10px 30px; /* Padding más grande */
+  font-size: 16px; /* Tamaño de la fuente */
+  text-transform: capitalize; /* Primeras letras en mayúsculas */
+}
+
+/* Efecto hover para el botón de usuario */
+.navbar-nav .nav-item .btn-primary:hover {
+  background-color: #0a5fb9; /* Fondo azul más oscuro */
+  color: white; /* El texto sigue siendo blanco */
+}
+
+/* Estilo personalizado para el botón */
+.custom-btn {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipografía más moderna */
+  padding: 10px 25px; /* Espaciado para hacerlo más grande */
+  font-size: 16px; /* Tamaño de fuente adecuado */
+  border-radius: 25px; /* Bordes redondeados */
+  border: 2px solid #003cff; /* Borde de color azul */
+  background-color: transparent; /* Fondo transparente */
+  color: #003cff; /* Color de texto azul */
+  transition: all 0.3s ease; /* Transición suave para efectos */
+  margin-top: 1cm;
+}
+
+/* Efecto hover para el botón */
+.custom-btn:hover {
+  background-color: #007bff; /* Fondo azul cuando pasa el mouse */
+  color: white; /* Texto blanco cuando pasa el mouse */
+  border-color: #0056b3; /* Borde más oscuro */
+}
+
+.btn-modificar {
+  background-color: #f0ad4e; /* Naranja cálido */
+  color: white;
+  border-radius: 5px;
+}
+
+.btn-modificar:hover {
+  background-color: #ec971f; /* Naranja más oscuro */
+}
+
+
+/* Añadir espaciado entre los botones */
+.navbar-nav .nav-item {
+  margin-right: 15px; /* Separación entre los botones */
+}
+
+/* Ajustar el espaciado entre los elementos */
+.navbar-nav .nav-item .navbar-text {
+  margin-right: 15px; /* Añadir margen derecho */
+}
+
+/* Estilo adicional para mejorar la apariencia del texto */
+.navbar-nav .nav-item a {
+  text-decoration: none; /* Sin subrayado */
+  color: inherit; /* Heredar el color del padre */
+}
+
+/* Estilo para el botón de confirmación */
+.btn-green {
+  background-color: #28a745; /* Fondo verde */
+  color: white; /* Texto blanco */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno */
+  border-radius: 30px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño de la fuente */
+  transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+  font-weight: bold;
+}
+
+/* Efecto hover para el botón */
+.btn-green:hover {
+  background-color: #1bb935; /* Verde más claro al pasar el mouse */
+}
+
+/* Estilo para el cuadro de fondo transparente negro */
+.title-box {
+  display: flex;
+  justify-content: center; /* Centra el texto horizontalmente */
+  align-items: center; /* Centra el texto verticalmente */
+  background-color: rgba(0, 0, 0, 0); /* Fondo negro con mayor transparencia */
+  border-color: #000000;
+  color: white; /* Texto blanco */
+  padding: 10px 20px; /* Espaciado alrededor del texto */
+  border-radius: 10px; /* Bordes redondeados */
+  font-size: 32px; /* Tamaño de la fuente */
+  font-weight: normal;
+  width: auto; /* Ajusta el ancho al contenido */
+  margin: 0 auto; /* Centra el cuadro */
+}
+
+
+
+.leaflet-map {
+    height: 500px; /* Adjust the height as needed */
+    width: 100%;   /* Make the map container take the full width of its parent */
+    border: 1px solid #ccc; /* Add a border for better visibility */
+    margin-top: 20px; /* Add some top margin for spacing */
+  }
+  

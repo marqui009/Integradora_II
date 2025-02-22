@@ -1,0 +1,59 @@
+<app-navigation></app-navigation> 
+
+<div class="container mt-5"> 
+    <div class="row justify-content-center"> 
+        <div class="col-md-6"> 
+            <form> 
+
+                <!-- Campo para ingresar el nombre -->
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="form2Example17">Nombre</label>
+                    <input type="text" id="form2Example17" class="form-control form-control-lg" 
+                        [ngModelOptions]="{ standalone: true }" 
+                        [(ngModel)]="usuarios.nombre"/> <!-- Vincula el campo con 'usuarios.nombre' -->
+                </div>
+
+                <!-- Campo para ingresar el correo electrónico -->
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="form2Example17">Correo Electronico</label>
+                    <input type="email" id="form2Example17" class="form-control form-control-lg" 
+                        [ngModelOptions]="{ standalone: true }" 
+                        [(ngModel)]="usuarios.correo"/> <!-- Vincula el campo con 'usuarios.correo' -->
+                </div>
+
+                <!-- Campo para ingresar la contraseña -->
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="form2Example27">Contraseña</label>
+                    <input type="text" id="form2Example27" class="form-control form-control-lg" 
+                        [ngModelOptions]="{ standalone: true }" 
+                        [(ngModel)]="usuarios.contrasena"/> <!-- Vincula el campo con 'usuarios.contrasena' -->
+                </div>
+
+                <!-- Campo para ingresar el teléfono -->
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="form2Example27">Telefono</label>
+                    <input type="text" id="form2Example27" class="form-control form-control-lg" 
+                        [ngModelOptions]="{ standalone: true }" 
+                        [(ngModel)]="usuarios.telefono"/> <!-- Vincula el campo con 'usuarios.telefono' -->
+                </div>
+
+                <!-- Campo para seleccionar el rol -->
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="form2Example17">Elige tu Rol</label>
+                    <select class="form-control" id="combobox" [(ngModel)]="usuarios.nombreRol" 
+                        [ngModelOptions]="{ standalone: true }">
+                        <!-- Itera sobre la lista de roles y muestra una opción por cada uno -->
+                        <option *ngFor="let item1 of rol" value="{{item1.nombreRol}}">
+                            {{item1.nombreRol}}
+                        </option>
+                    </select> <!-- Vincula el campo con 'usuarios.nombreRol' -->
+                </div>
+
+                <!-- Botón de envío para actualizar los datos del usuario -->
+                <button type="submit" class="btn btn-primary" (click)="updateuser()">Actualizar</button>
+                <!-- Al hacer clic, ejecuta la función 'updateuser()' para actualizar los datos -->
+                
+            </form>
+        </div>
+    </div>
+</div>

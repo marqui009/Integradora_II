@@ -1,0 +1,334 @@
+.header-blue {
+  background: #000; /* Fondo negro sólido */
+  padding-bottom: 100px;
+  font-family: 'Source Sans Pro', sans-serif; /* Tipografía general */
+  font-weight: 200;
+}
+
+/* Ajuste de padding para pantallas grandes */
+@media (min-width:768px) {
+  .header-blue {
+    padding-bottom: 10px;
+  }
+}
+.header-blue .navbar {
+  background: transparent; /* Fondo transparente */
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  color: #fff; /* Texto blanco */
+  border-radius: 0; /* Sin bordes redondeados */
+  box-shadow: none; /* Sin sombra */
+  border: none; /* Sin borde */
+}
+
+/* Ajuste de padding en pantallas más grandes */
+@media (min-width:768px) {
+  .header-blue .navbar {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+.header-blue .navbar .navbar-brand {
+  font-weight: bold; /* Texto en negritas */
+  color: inherit; /* Toma el color del contenedor */
+}
+
+.header-blue .navbar .navbar-brand:hover {
+  color: #f0f0f0; /* Cambia a gris claro al pasar el mouse */
+}
+.header-blue .navbar .navbar-collapse span .login {
+  color: #fff; /* Texto blanco */
+  border: none; /* Sin contorno */
+  padding: 8px 20px; /* Espaciado interno */
+  border-radius: 40px; /* Bordes redondeados */
+  text-decoration: none; /* Sin subrayado */
+  font-weight: bold; /* Letras en negritas */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.header-blue .navbar .navbar-collapse span .login:hover {
+  background-color: #fff; /* Fondo blanco al pasar el mouse */
+  color: #000; /* Texto negro */
+}
+.header-blue .action-button {
+  background-color: #000000; /* Fondo blanco */
+  color: #ffffff; /* Texto negro */
+  border: none; /* Sin borde */
+  border-radius: 40px; /* Bordes redondeados */
+  padding: 8px 20px; /* Espaciado interno */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.header-blue .action-button:hover {
+  background-color: transparent; /* Fondo transparente al pasar el mouse */
+  color: #fff; /* Texto blanco */
+  border: 1px solid #fff; /* Aparece el borde blanco */
+}
+.header-blue .navbar .form-inline .search-field {
+  display: inline-block;
+  width: 80%; /* Ancho relativo */
+  background: none;
+  border: none; /* Sin borde */
+  border-bottom: 1px solid transparent; /* Línea inferior inicial transparente */
+  border-radius: 0; /* Sin bordes redondeados */
+  color: inherit; /* Toma el color del texto contenedor */
+  transition: border-bottom-color 0.3s;
+}
+
+.header-blue .navbar .form-inline .search-field:focus {
+  border-bottom: 1px solid #ccc; /* Línea inferior gris al enfocar */
+}
+.header-blue .hero {
+  margin-top: 20px; /* Margen superior */
+  text-align: center; /* Centrar contenido */
+}
+
+@media (min-width:768px) {
+  .header-blue .hero {
+    margin-top: 60px; /* Más margen en pantallas grandes */
+    text-align: left; /* Texto alineado a la izquierda */
+  }
+}
+
+.header-blue .hero h1 {
+  color: #fff; /* Texto blanco */
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: 300; /* Letras finas */
+  line-height: 1.4; /* Espaciado entre líneas */
+}
+
+.header-blue .hero p {
+  color: rgba(255,255,255,0.8); /* Texto blanco semitransparente */
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-weight: 300; /* Letras finas */
+}
+/* Estilos generales para el artículo limpio */
+.article-clean {
+  color: #56585b; /* Color de texto gris oscuro */
+  background-color: #fff; /* Fondo blanco */
+  font-family: 'Lora', serif; /* Fuente serif elegante */
+  font-size: 14px; /* Tamaño de fuente base */
+  text-align: center; /* Centrar todo el texto dentro del artículo */
+}
+
+/* Estilos para la introducción del artículo */
+.article-clean .intro {
+  font-size: 16px; /* Tamaño de fuente mayor */
+  margin: 0 auto 30px; /* Márgenes para centrar el contenido */
+}
+
+.article-clean .intro h1 {
+  font-size: 50px; /* Título destacado grande */
+  margin: 20px 0 15px; /* Espacios alrededor */
+  padding-top: 20px; /* Espacio superior */
+  line-height: 1.5; /* Altura de línea adecuada */
+  color: inherit; /* Hereda el color del contenedor principal */
+}
+
+.article-clean .intro p { /* Texto debajo de ActiPro */
+  color: #929292; /* Texto gris claro */
+  font-size: 12px; /* Tamaño de fuente pequeño */
+}
+
+.article-clean .intro p .by {
+  font-style: italic; /* Estilo en cursiva */
+}
+
+.article-clean .intro p .date {
+  text-transform: uppercase; /* Texto en mayúsculas */
+  padding: 4px 0 4px 10px; /* Espaciado alrededor */
+  margin-left: 10px; /* Separación izquierda */
+  border-left: 1px solid #ddd; /* Línea divisoria izquierda */
+}
+
+.article-clean .intro p a {
+  color: #333; /* Color de enlace gris oscuro */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  padding-left: 3px; /* Espaciado a la izquierda */
+}
+
+.article-clean .intro img { /* Imágen debajo de la fecha */
+  margin-top: 20px; /* Espacio superior para imágenes */
+  height: 1cm;
+  object-fit: cover; /* Ajusta la imagen al contenedor */
+}
+
+
+/* Estilos para el texto principal del artículo */
+.article-clean .text p {
+  margin-bottom: 20px; /* Espaciado inferior entre párrafos */
+  line-height: 10; /* Altura de línea legible */
+}
+
+@media (min-width: 768px) {
+  .article-clean .text p {
+    font-size: 16px; /* Tamaño mayor en pantallas grandes */
+  }
+}
+
+.article-clean .text h2 {
+  margin: 28px 0 20px; /* Espaciado superior e inferior */
+  line-height: 1.45; /* Altura de línea */
+  font-size: 16px; /* Tamaño de subtítulos */
+  font-weight: bold; /* Subtítulos en negrita */
+  color: #333; /* Subtítulos gris oscuro */
+}
+
+@media (min-width: 768px) {
+  .article-clean .text h2 {
+    font-size: 20px; /* Tamaño mayor para subtítulos en pantallas grandes */
+  }
+}
+
+.article-clean .text figure {
+  text-align: center; /* Centrar figuras */
+  margin: 30px 0 20px; /* Espaciado alrededor de las imágenes */
+}
+
+.article-clean .text figure img {
+  margin-bottom: 12px; /* Espacio inferior para imágenes */
+  max-width: 100%; /* Las imágenes no superan el ancho del contenedor */
+}
+
+
+/* Contenedor principal con la imagen de fondo */
+.content-section {
+  background-image: url('https://mexicodesign.com/wp-content/uploads/2022/02/como-hacer-tu-propia-oficina-en-casa-768x372.png'); /* Imagen de fondo */
+  background-size: cover; /* La imagen cubre todo el ancho y alto sin deformarse */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* No repite la imagen */
+  padding: 100px 20px; /* Espaciado interno para que el texto no esté pegado */
+  text-align: left; /* Alinea el texto a la izquierda */
+  width: 100%; /* La sección ocupa todo el ancho disponible */
+}
+
+/* Estilo para el texto destacado */
+.highlight-text {
+  background: rgba(0, 0, 0, 0.6); /* Fondo semitransparente para destacar el texto */
+  color: #fff; /* Texto blanco */
+  font-size: 22px; /* Tamaño de fuente grande */
+  font-weight: normal; /* Texto en negrita */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  display: flex; /* Ajusta el tamaño al contenido */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Cambiar la fuente */
+  max-width: 100%; /* Asegura que el texto ocupe todo el ancho posible */
+  margin-right: 100; /* Alinea el texto completamente a la izquierda */
+  position: relative; /* Posicionamiento relativo para ajustar el texto */
+  z-index: 1; /* Asegura que el texto esté por encima de la imagen */
+}
+
+
+
+
+
+
+/* Estilos para el contenedor de noticias */
+.titulo-noticias {
+  color: #ffffff; /* Texto blanco */
+  font-family: 'Montserrat', sans-serif; /* Fuente moderna */
+  background-color: #a10000; /* Fondo rojo */
+  padding: 8px 15px; /* Espaciado interno para el cuadro */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 30px; /* Tamaño de fuente adecuado */
+  font-weight: bold; /* Negrita */
+  display: inline-block; /* Hacer que el cuadro se ajuste al texto */
+}
+
+
+.noticias-container {
+  display: flex; /* Diseño flexible */
+  flex-direction: column; /* Elementos en columna */
+  align-items: center; /* Centrar elementos */
+  text-align: center; /* Texto centrado */
+  margin-bottom: 40px; /* Mayor espacio inferior */
+  margin-top: 50px; /* Mayor espacio superior */
+  padding: 30px; /* Añadir padding alrededor del contenido */
+  background-color: #8e8888b2; /* Fondo suave para resaltar */
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra suave para un toque más moderno */
+}
+
+
+/* Estilos para los elementos select e input dentro de noticias */
+.noticias-container select, .noticias-container input {
+  padding: 5px 10px; /* Espaciado interno */
+  border: 2px solid #ff0000; /* Borde gris claro */
+  border-radius: 30px; /* Bordes redondeados */
+  margin: 10px; /* Espaciado alrededor */
+}
+
+/* Estilos para la lista de noticias */
+.noticias-container ul {
+  list-style: none; /* Sin viñetas */
+  padding: 0; /* Sin espaciado interno */
+}
+
+/* Estilos para los elementos de lista de noticias */
+.noticias-container li {
+  display: flex; /* Diseño flexible */
+  flex-direction: column; /* Elementos en columna */
+  align-items: center; /* Centrar elementos */
+  background-color: #eee; /* Fondo gris claro */
+  max-width: 360px; /* Ancho máximo */
+  border: 2px solid #ccc; /* Borde gris claro */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 10px; /* Espaciado interno */
+  cursor: pointer; /* Cambia el cursor al pasar */
+  transition: 0.3s; /* Transiciones suaves */
+  margin: 10px; /* Espaciado alrededor */
+}
+
+/* Efecto al pasar el mouse sobre un elemento de lista */
+.noticias-container li:hover {
+  box-shadow: 0 0 10px 5px #ccc; /* Sombra al pasar el mouse */
+}
+
+/* Subrayado en el título de la noticia al pasar el mouse */
+.noticias-container li:hover h3 {
+  text-decoration: underline; /* Subrayado en el título */
+}
+
+/* Estilo de las imágenes dentro de los elementos de lista */
+.noticias-container li img {
+  width: 100%; /* Las imágenes ocupan todo el ancho del contenedor */
+}
+
+/* Estilos para el diseño en cuadrícula de noticias */
+.noticias-grid {
+  display: grid; /* Utiliza un sistema de cuadrícula */
+  grid-template-columns: repeat(4, 1fr); /* Cuatro columnas iguales */
+  grid-gap: 20px; /* Espacio entre elementos de la cuadrícula */
+  list-style: none; /* Sin viñetas */
+  padding: 0; /* Sin espaciado interior */
+}
+
+/* Estilos para cada elemento dentro de la cuadrícula de noticias */
+.noticia-item {
+  background-color: #eee; /* Fondo gris claro */
+  border: 2px solid #ccc; /* Borde gris claro */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 10px; /* Espaciado interno */
+  cursor: pointer; /* Cambia el cursor al pasar */
+  transition: 0.3s; /* Transiciones suaves */
+}
+
+/* Efecto al pasar el mouse sobre un elemento de noticia */
+.noticia-item:hover {
+  box-shadow: 0 0 10px 5px #ccc; /* Sombra al pasar el mouse */
+}
+
+/* Subrayado en el título de la noticia al pasar el mouse */
+.noticia-item:hover h3 {
+  text-decoration: underline; /* Subrayado en el título */
+}
+
+/* Estilo de las imágenes dentro de los elementos de noticia */
+.noticia-item img {
+  width: 100%; /* Las imágenes ocupan todo el ancho del contenedor */
+}
+

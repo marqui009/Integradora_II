@@ -1,0 +1,25 @@
+/* Estilo para el mapa */
+#map {
+    height: 400px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .titulo {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .btn {
+    margin: 5px 0;
+  }
+  
+  form label {
+    font-weight: bold;
+  }
+  
+  .container-fluid {
+    padding-top: 70px; /* Para que la barra de navegación no tape el contenido */
+  }
+  

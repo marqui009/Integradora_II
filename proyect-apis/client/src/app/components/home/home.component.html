@@ -1,0 +1,22 @@
+<app-navigation></app-navigation>
+
+<div class="row header-blue">
+  <div class="col-md-12 text-center">
+    <h2 class="font-weight-bold mb-4">Recomendaciones</h2>
+    <p class="font-weight-bold mb-4">Descubre videos donde puedes encontrar inspiracion en peliculas del momento, te ayudará a tener una actitud más positiva.</p>
+    
+    <div class="video-player-container">
+      <div id="video-container" class="video-player" #videoContainer></div>
+    </div>  
+    
+    <div class="video-list d-flex justify-content-center flex-wrap">
+      <div *ngFor="let video of videos" class="video-item" (click)="playVideo(video.id.videoId)">
+        <img [src]="'https://img.youtube.com/vi/' + video.id.videoId + '/hqdefault.jpg'" alt="Video Thumbnail">
+        <div class="video-info">
+          <h3>{{ video.snippet.title }}</h3>
+          <p>{{ video.snippet.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

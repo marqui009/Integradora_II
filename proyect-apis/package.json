@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "@angular-builders/custom-webpack": "^19.0.0",
+    "@auth0/angular-jwt": "^5.2.0",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@zoomus/websdk": "^2.18.3",
+    "buffer": "^6.0.3",
+    "cordova-plugin-inappbrowser": "^6.0.0",
+    "crypto-browserify": "^3.12.1",
+    "jsonwebtoken": "^9.0.2",
+    "leaflet": "^1.7.1",
+    "stream-browserify": "^3.0.0",
+    "util": "^0.12.5"
+  }
+}

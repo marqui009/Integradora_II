@@ -1,0 +1,80 @@
+/* Cabecera de la página */
+.header-blue {
+  background-color: white; /* Fondo blanco */
+  padding-bottom: 60px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #333; /* Color del texto */
+}
+
+/* Contenido centrado y espaciado */
+.header-blue .col-md-12 {
+  text-align: center;
+}
+
+/* Estilo para el título */
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Estilo para el párrafo */
+p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+/* Contenedor de videos */
+.video-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Para que los videos se ajusten en filas */
+  gap: 20px; /* Espaciado entre tarjetas de video */
+}
+
+/* Estilo de las tarjetas de video */
+.video-item {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 250px; /* Tamaño máximo de las tarjetas */
+  cursor: pointer;
+}
+
+/* Efecto hover en las tarjetas */
+.video-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Estilo de la imagen del video */
+.video-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+/* Estilo para la información del video */
+.video-info {
+  margin-top: 10px;
+}
+
+.video-info h3 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.video-info p {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 0;
+}
